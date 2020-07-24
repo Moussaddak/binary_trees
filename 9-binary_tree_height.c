@@ -28,7 +28,7 @@ size_t binary_tree_height(binary_tree_t *tree)
  */
 int Is_leaf(binary_tree_t *node)
 {
-	if (!node->left && !node->right && !node)
+	if (!node->left && !node->right && node != 0)
 	{
 		return (1);
 	}
